@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "react-native-facebook-sdk-example",
+    "slug": "react-native-facebook-sdk-example",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "react-native-facebook-sdk-example"
+}
