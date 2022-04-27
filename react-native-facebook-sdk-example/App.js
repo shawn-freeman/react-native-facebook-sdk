@@ -1,17 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+//StatusBar imported from react-native. May still need expo-status-bar
+//import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 //facebook sdk required imports
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Alert,
   SafeAreaView,
-  StyleSheet,
   ScrollView,
-  View,
   StatusBar,
-  Text,
   TouchableHighlight
 } from 'react-native';
 
@@ -29,14 +27,14 @@ const SHARE_LINK_CONTENT = {
   contentUrl: 'https://www.facebook.com/',
 };
 
-const App = () => {
+export default function App() {
 
   const [profile, setProfile] = useState([]);
   const [profileImage, setProfileImage] = useState();
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   return (
-    <>
+    <View>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -80,7 +78,7 @@ const App = () => {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </>
+    </View>
   );
 }
 
